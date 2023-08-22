@@ -1,0 +1,123 @@
+.spider{
+    position: relative;
+    margin-top: 100px;
+    width: 58rem;
+}
+
+.spider-head{
+    position: absolute;
+    width: 10rem;
+    height: 10rem;
+    left: 50%;
+    top: 10rem;
+    border-radius: 10rem;
+    background-color: black;
+    transform: translateX(-50%);
+     
+}
+
+
+.spider-body{
+    background: black;
+    position: absolute;
+    top: 20rem;
+    left: 50%;
+    width: 20rem;
+    height: 15rem;
+    transform: translateX(-50%);
+}
+
+
+.spider-body::before{
+    position: absolute;
+    top: 100%;
+	border: solid transparent;
+	content: "";
+	height: 0;
+	width: 0;
+	border-color: rgba(0, 0, 0, 0);
+    border-top-color: #000000;
+	border-width: 5rem 10rem;
+	
+}
+
+.spider-body::after{
+    position: absolute;
+    bottom: 100%;
+	border: solid transparent;
+	content: "";
+	height: 0;
+	width: 0;
+	border-color: rgba(0, 0, 0, 0);
+    border-bottom-color: #000000;
+	border-width: 5rem 10rem;
+}
+
+
+.spider-leg-in , .spider-leg-out{
+    position: absolute;
+    top: 0;
+}
+.spider-leg-in:nth-child(1){
+    left: 18rem;
+}
+.spider-leg-out:nth-child(1) {
+    left: 14rem;
+}
+
+.spider-leg-in:nth-child(2){
+    transform: scale(-1, 1);
+    right: 18rem;
+}
+
+.spider-leg-out:nth-child(2){
+    transform: scale(-1, 1);
+    right: 14rem;
+}
+
+span{
+    position: absolute;
+    background: #000000;
+}
+
+span:nth-child(1){
+width: 2rem;
+height: 10.2rem;
+transform: skewY(45deg);
+}
+
+span:nth-child(2){
+    top: 9rem;
+    left: 1.3rem;
+    width: 2rem;
+    height: 3rem;
+    border-radius: 0.8rem 0 0 0;
+    transform: skewX(45deg);
+}
+
+span:nth-child(3) {
+    top: 11.5rem;
+    left: 2.8rem;
+    width: 2rem;
+    height: 4.5rem;
+    border-radius: 0 0.8rem 0.5rem 0 ; 
+}
+span:nth-child(4){
+    top: 15.5rem;
+    left: -0.5rem;
+    width: 2.5rem;
+    height: 4rem;
+    transform: skewX(-60deg);
+    border-radius: 0 1rem 0 1rem ; 
+
+}
+
+span:nth-child(5){
+
+    top: 18.7rem;
+    left: -3.5rem;
+    width: 2rem;
+    height: 19rem;
+    transform: skewY(-30deg);
+
+}
